@@ -7,29 +7,13 @@
 </head>
 <body>
     <div id="root"></div>
-    uhh
     <!-- React and Babel -->
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <!-- Your React code -->
-    <script type="text/babel">
-        const Navbar = require('static/js/core/components/navbar.js').default;
-
-        function App() {
-            console.log('App component is loaded');
-            return (
-                <div>
-                    <Navbar />
-                    <div>
-                        <h1>Welcome to SportsHunt</h1>
-                    </div>
-                </div>
-            );
-        }
-
-        ReactDOM.render(<App />, document.getElementById('root'));
-    </script>
+    <script type="text/babel" src="/static/js/core/components/navbar.js"></script>
+    <script type="text/babel" src="/static/js/core/scripts/base.js"></script>
 </body>
 </html>
